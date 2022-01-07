@@ -190,7 +190,7 @@ class Cringe(pygame.sprite.Sprite):
            self.rect.y = random.randrange(-100, -10)
 
 class Grail(pygame.sprite.Sprite):
-    # define the appearance of the cringe sprite
+    # define the appearance of the grail sprite
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image_old = random.choice(grail_imgs)
@@ -203,7 +203,7 @@ class Grail(pygame.sprite.Sprite):
         self.speed = 1
         self.total_angle = 0
         self.rot_angle = random.randrange(-2,2)
-    # define the movement of cringe sprite
+    # define the movement of grail sprite
     def update(self):
         self.rect.y += self.speed
         if self.rect.top > HEIGHT:
@@ -212,7 +212,7 @@ class Grail(pygame.sprite.Sprite):
 
 # justice sprite
 class Ban(pygame.sprite.Sprite):
-    # define the appearance of the cringe sprite
+    # define the appearance of the ban sprite
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.transform.scale(ban_img,(30,20))# player's figure
